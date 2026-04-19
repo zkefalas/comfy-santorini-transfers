@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-cinzel: var(--font-cinzel);
+  --font-montserrat: var(--font-montserrat);
+  --font-poppins: var(--font-poppins);
+  --color-dark-bg: #000000;
+}
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+@layer base {
+  body {
+    background-color: #000000 !important;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* Antialiasing για πιο clean γραμματοσειρές σε μαύρο φόντο */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
